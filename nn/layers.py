@@ -50,9 +50,9 @@ class ResBlock(nn.Module):
 
         def forward(self, x):
                 y = self.pad(x)
-                y = self.conv1(x)
-                y = self.pad(x)
-                y = self.conv2(x)
+                y = self.conv1(y)
+                y = self.pad(y)
+                y = self.conv2(y)
                 y = self.pad(y)
 
                 return x + y
