@@ -73,7 +73,7 @@ def train(model, A, B, iterations):
                 G_A_loss, G_B_loss = model.train_gen_on_batch(A_batch, B_batch)
                 
                 # Write things down
-                print("[",ITER,"/",ITERATIONS,"]")
+                print("[",ITER,"/", iterations,"]")
                 print("D A Loss:",D_A_loss)
                 print("G A Loss:",G_A_loss)
                 print("D B Loss:",D_B_loss)

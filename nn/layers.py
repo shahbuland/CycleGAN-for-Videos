@@ -53,6 +53,5 @@ class ResBlock(nn.Module):
                 y = self.conv1(y)
                 y = self.pad(y)
                 y = self.conv2(y)
-                y = self.pad(y)
 
                 return x + y
