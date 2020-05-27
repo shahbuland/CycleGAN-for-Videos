@@ -1,7 +1,6 @@
 # CycleGAN-for-Videos  
   This is an unfinished project from way back that I decided to complete and share. It's a pretty simple implementation of a vanilla cyclegan (meaning architecture is same as it was in the [original paper](https://arxiv.org/pdf/1703.10593.pdf)). There is a lot of added functionality specifically for using it with videos as that is what I primarily made it for (i.e. feeding it a video of day and a video of night and then it learning to convert between the two). I will outline some key stuff with hyperparameters, setup and usage below. 
 # Requirements  
-Same requirements as for any other pytorch project:  
 Python 3.6  
 CUDA, CUDNN (You can turn this off via USE_CUDA in nn/constants.py  but training without it will be very slow)  
 Pytorch (and all its dependencies)  
